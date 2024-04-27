@@ -12,24 +12,17 @@ h1{
     font-size: 50px;
 }
 .container{
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: auto;
     background-color: #fbfbfb;
     margin: 50px auto;
     border-radius: 12px;
     box-shadow: 0px 0px 5px #696868;
 }
 
-#show-random{
-    padding: 35px;
-    font-size: 35px;
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 100;
-    font-style: normal;
-}
 
-#btn{
+
+#domain{
     width: 300px;
     height: 45px;
     border-radius: 12px;
@@ -49,8 +42,42 @@ h1{
     transition: all 0.5s;
 }
 
-#btn:hover{
+#domain:hover{
     cursor: pointer;
     background-color: #f9f7f7;
 
 }
+
+#show-domain{
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+  
+
+    #show-domain{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container {
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 390px) {
+
+    #show-domain{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    h1{
+       font-size: 25px;
+    }
+    .container {
+        width: 100%;
+        
+    }
+  }
